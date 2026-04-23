@@ -139,7 +139,7 @@ public class HilosYSocketsServer {
             
             if(msg.toUpperCase().startsWith("CALCULAR ")){
                 
-                String expr = msg.substring(5).trim();
+                String expr = msg.substring(9).trim();
                 salida.writeUTF(calcular(expr));
                 continue;
             }
